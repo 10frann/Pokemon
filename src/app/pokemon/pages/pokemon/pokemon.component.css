@@ -1,0 +1,28 @@
+section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#superior{
+    display: flex;
+    justify-content: center;
+}
+#titular{
+    border: 1px solid white;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    margin-left: 40px;
+}
+th{ 
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}

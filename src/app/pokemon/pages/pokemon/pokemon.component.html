@@ -1,0 +1,32 @@
+<section>
+    <div id="superior">
+        <div id="titular">
+            <img [src]="pokemonImage.sprites.front_default" alt="" width="180px">
+            <!-- <h2 [innerHTML]="pokemon.name | color:'grass' | uppercase"></h2>   -->
+            <h2 [style.color]="'green'"> {{pokemon.name | color:pokemon.types[0].type.name}} </h2>
+            <p> Especie: {{pokemonImage.name}} </p>
+            <p>Tipo: <span *ngFor="let item of pokemonImage.types"> {{item.type.name}} </span> </p>
+            <p>Habilidades: <span *ngFor="let item of pokemon.abilities"> {{item.ability.name}} </span></p>
+        </div>
+        <div id="datos">
+            <table>
+                <tr>
+                    <th>XP BASE</th>
+                    <td> {{pokemon.base_experience}} </td>
+                </tr>
+                <tr>
+                    <th>ALTURA</th>
+                    <td> {{pokemon.height}} </td>
+                </tr>
+                <tr>
+                    <th>PESO</th>
+                    <td> {{pokemon.weight}} </td>
+                </tr>
+                <tr>
+                    <th>ORDEN</th>
+                    <td> {{pokemon.id}} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<section>
+    <div id="listPokemon">
+        <ul>
+            <li *ngFor="let item of pokemons"> <a [routerLink]="['pokemon',item.url]">{{item.name | uppercase}}</a> </li>
+        </ul>
+    </div>
+    <div id="botones">
+        <button (click)="loadPreviusPage()">Anterior página</button>
+        <button (click)="loadNextPage()">Siguiente página</button>
+        <p> {{currentPage}}/{{totalPage}} </p>
+    </div>
+</section>

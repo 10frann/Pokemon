@@ -1,0 +1,19 @@
+#navbar{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
