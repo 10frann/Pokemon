@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { pokemonGuardGuard } from './pokemon/guards/pokemon-guard.guard';
 
 const routes: Routes = [
   {path: 'pokemon', loadChildren: () => import('./pokemon/pokemon.module').then(module => module.PokemonModule)},

@@ -10,7 +10,7 @@ const routes: Routes = [
     {path: '', component: ListPokemonComponent, canActivate: [pokemonGuardGuard]},
     {path: 'masInfo', component: MasInfoComponent},
     {path: 'pokemon/:url', component: PokemonComponent},
-    {path: '**', redirectTo:'pokemons'}
+    {path: '**', redirectTo:''}
   ] }
 ];
 

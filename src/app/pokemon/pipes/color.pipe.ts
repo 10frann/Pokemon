@@ -6,12 +6,20 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ColorPipe implements PipeTransform {
 
-  transform(value: string, type: string ): string {
+  transform(type: string ): string {
     switch (type) { 
       case 'grass':
-        return `<span style="color: green;">${value}</span>`
+        return "green"
+      case 'fire':
+        return "red"
+      case 'water':
+        return "blue"
+      case 'bug-ground':
+        return "brown"
+      case 'normal':
+        return "gray"
       default :
-        return value
+        return "white"
     }
   }
 }
